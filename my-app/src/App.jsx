@@ -1,7 +1,11 @@
-import { Helloworld } from "./HelloWorld";
+import Hello from './Hello';
 
-const helloWorldElement = (
-  <div>
-    <Helloworld />
-  </div>
-)
+function App() {
+  return (
+    <div>
+      <Hello />
+    </div>
+  );
+}
+
+export default App;
