@@ -1,8 +1,12 @@
-function GreetUser() {
+function GreetUser({ name }) {
   return <h1>Hello, {name}</h1>;
 }
 
-//without the name as a parameter will throw a reference error because name is not in scope.
+//If the name variable contains a JSX expression instead of a string,
+//React will treat it as JSX  render it as part of your component
+
+
+
 
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
