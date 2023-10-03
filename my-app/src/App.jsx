@@ -1,9 +1,12 @@
-function GreetUser({ name }) {
-  return <h1>Hello, {name}</h1>;
+import React from 'react';
+
+function SumDisplay({ a, b }) {
+  const sum = a + b;
+
+  return <h2>The sum of {a} and {b} is: {sum}</h2>;
 }
 
-//If the name variable contains a JSX expression instead of a string,
-//React will treat it as JSX  render it as part of your component
+export default SumDisplay;
 
 
 
