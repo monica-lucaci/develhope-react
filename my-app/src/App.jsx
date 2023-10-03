@@ -1,6 +1,6 @@
-
-const hello = <h1>Hello, World!</h1>;
-
+function GreetUser({ name }) {
+  return <h1>Hello, {name}</h1>;
+}
 
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
@@ -9,7 +9,6 @@ const hello = <h1>Hello, World!</h1>;
 
 // function App() {
 //   const [count, setCount] = useState(0)
-
 
 //   return (
 //     <>
