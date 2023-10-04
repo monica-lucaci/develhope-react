@@ -1,5 +1,9 @@
-const Welcome = ({ name = "guest" }) => {
-  return <p>Welcome, {name}!</p>;
+const Welcome = ({ name = "guest",age}) => {
+  return <>
+   <p>Welcome, {name}!</p>
+   <p>Your age is {age}!</p>
+  </>
+ 
 };
 
 export default Welcome;

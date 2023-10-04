@@ -11,7 +11,7 @@ const App = () => {
     <div>
       <Hello />
       <Message />
-      <Welcome />
+      <Welcome name="monica" age={31} />
     </div>
   );
 };
