@@ -4,7 +4,7 @@ import Welcome from "./Welcome";
 
 
 const App = () => {
-  const age = 31;
+  const age = 3;
 
   return (
     <div>

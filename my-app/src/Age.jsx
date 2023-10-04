@@ -1,6 +1,9 @@
-const Age = ({age}) => {
-    return(
-        <p>Your age is {age}!</p>
-    )
-}
-export default Age
+const Age = ({ age }) => {
+  return (
+    <>
+      {age > 18 && <p>Your age is {age}!</p>}
+      {age < 18 && <p>You are very young!</p>}
+    </>
+  );
+};
+export default Age;
