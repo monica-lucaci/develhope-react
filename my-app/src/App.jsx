@@ -8,11 +8,13 @@ import Welcome from "./Welcome";
 
 const App = () => {
   const nameWithStrong = <strong>Monica</strong>;
+  const age = 31;
+
   return (
     <div>
       <Hello />
       <Message />
-      <Welcome name={nameWithStrong} age={31} />
+      <Welcome name={nameWithStrong} age={age} />
     </div>
   );
 };
