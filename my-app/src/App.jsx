@@ -2,15 +2,19 @@ import Hello from "./Hello";
 import Message from "./Message";
 import Welcome from "./Welcome";
 
-function App() {
+// Welcome.defaultProps = {
+//   name: "guest",
+// };
+
+const App = () => {
   return (
     <div>
       <Hello />
       <Message />
-      <Welcome name="Monica" />
+      <Welcome />
     </div>
   );
-}
+};
 
 export default App;
 

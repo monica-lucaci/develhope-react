@@ -1,4 +1,4 @@
-const Welcome = ({ name }) => {
+const Welcome = ({ name = "guest"}) => {
   return <p>Welcome, {name}!</p>;
 };
 
