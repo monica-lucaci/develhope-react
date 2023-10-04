@@ -7,13 +7,17 @@ import Welcome from "./Welcome";
 // };
 
 const App = () => {
+  const nameWithStrong = <strong>Monica</strong>;
   return (
     <div>
       <Hello />
       <Message />
-      <Welcome name="monica" age={31} />
+      <Welcome name={nameWithStrong} age={31} />
     </div>
   );
 };
 
 export default App;
+
+//when you pass an expression it will be rendered.
+// as in my case resulting in the name "Monica" being displayed in bold when the component is rendered.
