@@ -5,7 +5,7 @@ import Welcome from "./Welcome";
 
 const App = () => {
   const nameWithStrong = <strong>Monica</strong>;
-  const age = 31;
+  const age = 66;
 
   return (
     <div>

@@ -4,7 +4,7 @@ const Welcome = ({ name = "guest", age }) => {
   return (
     <>
       <p>Welcome, {name}!</p>
-      {age  && <Age age={age} />}
+      {age>18 && age<65 && <Age age={age} />}
     </>
   );
 };
