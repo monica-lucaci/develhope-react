@@ -12,6 +12,7 @@ const App = () => {
       <Hello />
       <Message />
       <Welcome name="John" age={age} />
+      
       <AlertClock />
     </div>
   );
