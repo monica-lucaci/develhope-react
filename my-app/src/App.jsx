@@ -1,6 +1,7 @@
 import AlertClock from "./AlertClock";
+import Counter from "./Counter";
 import Hello from "./Hello";
-import Message from "./Message";
+// import Message from "./Message";
 import Welcome from "./Welcome";
 
 const App = () => {
@@ -14,9 +15,10 @@ const App = () => {
   return (
     <div>
       <Hello />
-      <Message />
+      {/* <Message /> */}
       <Welcome name="John" age={age} />
       <AlertClock onButtonClick={handleShowAlert} />
+      <Counter />
     </div>
   );
 };
