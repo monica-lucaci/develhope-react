@@ -3,7 +3,6 @@ import Counter from "./Counter";
 import Hello from "./Hello";
 // import Message from "./Message";
 import Welcome from "./Welcome";
-
 const App = () => {
   const age = 3;
   const handleShowAlert = () => {
