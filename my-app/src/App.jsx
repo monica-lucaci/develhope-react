@@ -17,7 +17,7 @@ const App = () => {
       {/* <Message /> */}
       <Welcome name="John" age={age} />
       <AlertClock onButtonClick={handleShowAlert} />
-      <Counter />
+      <Counter initialValue={0} incrementAmount={2}/>
     </div>
   );
 };
