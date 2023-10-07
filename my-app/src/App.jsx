@@ -1,4 +1,5 @@
-import InteractiveWelcome from "./InteractiveWelcome";
+import Login from "./Login";
+
 
 
 const App = () => {
@@ -6,7 +7,7 @@ const App = () => {
 
   return (
     <div>
-      <InteractiveWelcome />
+      <Login />
     </div>
   );
 };
