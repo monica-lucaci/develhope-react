@@ -28,6 +28,13 @@ const UncontrolledLogin = () => {
       remember: formData.get("remember") === "on" ? true : false,
     };
     console.log(data);
+
+    //What is the standard API for accessing form data in the DOM?
+    //The standard API for accessing form data in the DOM is the FormData object.
+
+    //Are there non-standard APIs that can be used to access the form data?
+    //there are no widely recognized non-standard APIs for accessing form data
+    //it's best practice to use the standard FormData API for accessing form data when working with web forms.
   };
 
   return (
