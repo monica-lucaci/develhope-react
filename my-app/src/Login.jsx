@@ -31,21 +31,25 @@ const Login = ({ onLogin }) => {
     onLogin(data);
   };
 
+  const handleButtonClick = () => {
+    setData(CreateFormData);
+  };
+
   return (
     <>
-    <h2>Sign In</h2>
+      <h2>Sign In</h2>
       <form onSubmit={handleSubmit}>
         <input
           value={data.username}
           name="username"
-          onChange={handleInputChange} 
+          onChange={handleInputChange}
           placeholder="username"
         />
         <input
           value={data.password}
           type="password"
           name="password"
-          onChange={handleInputChange} 
+          onChange={handleInputChange}
           placeholder="password"
         />
         <input
@@ -57,6 +61,9 @@ const Login = ({ onLogin }) => {
         <label htmlFor="remember">Remember me!</label>
         <button type="submit" disabled={!data.username || !data.password}>
           Login
+        </button>
+        <button type="button" onClick={handleButtonClick}>
+          RESET
         </button>
       </form>
     </>
