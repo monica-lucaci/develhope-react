@@ -26,26 +26,30 @@ const Login = ({ onLogin }) => {
   };
 
   const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log("login button pressed", data);
+    event.preventDefault(); //this is how you prevent the default behavior of the form element
+    console.log("Username logged in:", data.username);
     onLogin(data);
+  };
+
+  const handleButtonClick = () => {
+    setData(CreateFormData);
   };
 
   return (
     <>
-    <h2>Sign In</h2>
-      <form onSubmit={handleSubmit}>
+      <h2>Sign In</h2>
+      <form onSubmit={handleSubmit}>  //ADDED ONSUBMIT ON THE FORM
         <input
           value={data.username}
           name="username"
-          onChange={handleInputChange} 
+          onChange={handleInputChange}
           placeholder="username"
         />
         <input
           value={data.password}
           type="password"
           name="password"
-          onChange={handleInputChange} 
+          onChange={handleInputChange}
           placeholder="password"
         />
         <input
@@ -57,6 +61,9 @@ const Login = ({ onLogin }) => {
         <label htmlFor="remember">Remember me!</label>
         <button type="submit" disabled={!data.username || !data.password}>
           Login
+        </button>
+        <button type="button" onClick={handleButtonClick}>
+          RESET
         </button>
       </form>
     </>
