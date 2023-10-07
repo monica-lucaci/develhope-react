@@ -29,12 +29,12 @@ const UncontrolledLogin = () => {
     };
     console.log(data);
 
-    //What is the standard API for accessing form data in the DOM?
-    //The standard API for accessing form data in the DOM is the FormData object.
-
-    //Are there non-standard APIs that can be used to access the form data?
-    //there are no widely recognized non-standard APIs for accessing form data
-    //it's best practice to use the standard FormData API for accessing form data when working with web forms.
+    // the FormData API is a powerful tool for handling form data in web applications,
+    //  especially for basic to moderately complex forms. 
+    //  Its advantages include cross-browser compatibility, ease of use, and support for file uploads.
+    //   However, it may not be suitable for very complex forms or for cases where you need advanced validation
+    //    or integration with specific JavaScript frameworks. In such cases, using a dedicated form-handling 
+    //    library or framework might be a better choice.
   };
 
   return (
