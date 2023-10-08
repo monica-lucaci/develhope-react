@@ -1,10 +1,9 @@
-import React from "react";
-import Counter from "./Counter"; // Import the Counter component
+import Colors from "./Colors";
 
 const App = () => {
   return (
     <div>
-      <Counter initialValue={0} incrementAmount={1} decrementAmount={1} />
+      <Colors items={['red','yellow','green','blue','pink']}/>
     </div>
   );
 };
