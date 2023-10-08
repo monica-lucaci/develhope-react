@@ -1,16 +1,11 @@
-// import Login from "./Login";
-
-import UncontrolledLogin from "./UncontrolledLogin";
-
-// const handleLogin = (formData) => {
-//   console.log("Logging in with data:", formData);
-// };
+import FocusableInput from "./FocusableInput";
 
 const App = () => {
   return (
     <div>
-      {/* <Login onLogin={handleLogin} /> */}
-      <UncontrolledLogin />
+      <h1>My Focused Input</h1>
+      <hr></hr>
+      <FocusableInput />
     </div>
   );
 };
