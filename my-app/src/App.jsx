@@ -1,9 +1,10 @@
-import Colors from "./Colors";
+import TodoList from "./TodoList";
+
 
 const App = () => {
   return (
     <div>
-      <Colors />
+    <TodoList  />
     </div>
   );
 };
