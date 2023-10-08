@@ -1,12 +1,12 @@
 import FocusableInput from "./FocusableInput";
+import Refs from "./Refs";
+import React from "react";
 
 const App = () => {
   return (
-    <div>
-      <h1>My Focused Input</h1>
-      <hr></hr>
-      <FocusableInput />
-    </div>
+    <React.StrictMode>
+      <Refs />
+    </React.StrictMode>
   );
 };
 
