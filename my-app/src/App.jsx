@@ -1,12 +1,11 @@
-import FocusableInput from "./FocusableInput";
-import Refs from "./Refs";
 import React from "react";
+import Counter from "./Counter"; // Import the Counter component
 
 const App = () => {
   return (
-    <React.StrictMode>
-      <Refs />
-    </React.StrictMode>
+    <div>
+      <Counter initialValue={0} incrementAmount={1} decrementAmount={1} />
+    </div>
   );
 };
 
