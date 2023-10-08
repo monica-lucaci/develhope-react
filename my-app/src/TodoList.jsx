@@ -12,7 +12,7 @@ const TodoList = () => {
   const addItem = () => {
     if (inputValue.trim() !== "") {
       setItems([...items, inputValue]);
-      setInputValue(""); 
+      setInputValue(""); //THIS CLEARS the input every time one item is added 
     }
   };
 
