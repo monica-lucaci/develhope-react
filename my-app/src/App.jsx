@@ -1,10 +1,11 @@
 import TodoList from "./TodoList";
+import Welcome from "./Welcome";
 
 
 const App = () => {
   return (
     <div>
-    <TodoList  />
+    <Welcome name="Monica" />
     </div>
   );
 };
