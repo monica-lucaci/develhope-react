@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import classes from "./TodoList.module.scss";
 
 const TodoList = () => {
   const [items, setItems] = useState([]);
@@ -29,9 +30,14 @@ const TodoList = () => {
       <h2>Todo List</h2>
       <ul>
         {items.map((item, index) => (
-          <li key={index}>
+          <li className={classes.list} key={index}>
             {item}
-            <button onClick={() => removeItem(index)}>Remove</button>
+            <button
+              className={classes.button}
+              onClick={() => removeItem(index)}
+            >
+              X
+            </button>
           </li>
         ))}
       </ul>
@@ -41,8 +47,8 @@ const TodoList = () => {
         value={inputValue}
         onChange={handleInputValue}
       />
-      <button onClick={addItem}>Add</button>
-      <button onClick={resetItems}>Reset</button>
+      <button className={classes.addButton} onClick={addItem}>Add</button>
+      <button className={classes.resetButton} onClick={resetItems}>Reset</button>
     </div>
   );
 };
