@@ -15,7 +15,13 @@ function Clock() {
     return () => clearInterval(intervalId);
   }, []);
 
-  return <h2>Current Time: {currentTime.toLocaleTimeString()}</h2>;
+  return (
+    <div className="clock">
+      <h2 >
+        Current Time: {currentTime.toLocaleTimeString()}
+      </h2>
+    </div>
+  );
 }
 
 export default Clock;
