@@ -38,7 +38,7 @@ const Login = ({ onLogin }) => {
   return (
     <>
       <h2>Sign In</h2>
-      <form onSubmit={handleSubmit}>  //ADDED ONSUBMIT ON THE FORM
+      <form onSubmit={handleSubmit}>
         <input
           value={data.username}
           name="username"
@@ -59,7 +59,16 @@ const Login = ({ onLogin }) => {
           onChange={handleInputChange}
         />
         <label htmlFor="remember">Remember me!</label>
-        <button type="submit" disabled={!data.username || !data.password}>
+        <button
+          type="submit"
+          disabled={!data.username || !data.password}
+          style={{
+            backgroundColor: data.password.length < 8 ? "red" : "green",
+            color: "black",
+            borderRadius : '25px',
+            padding:'5px'
+          }}
+        >
           Login
         </button>
         <button type="button" onClick={handleButtonClick}>
