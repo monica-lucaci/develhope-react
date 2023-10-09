@@ -32,12 +32,12 @@ const Counter = ({ initialValue, incrementAmount, decrementAmount }) => {
   }, [counter]);
 
   return (
-    <>
+    <div style={{ backgroundColor: "aqua", color: "black", border:"1px solid black" }}>
       <CounterDisplay counter={counter} />
       <button onClick={incrementCounter}>Increment by {incrementAmount}</button>
       <button onClick={decrementCounter}>Decrement by {decrementAmount}</button>
       <button onClick={resetCounter}>Refresh</button>
-    </>
+    </div>
   );
 };
 
