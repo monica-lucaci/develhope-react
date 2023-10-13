@@ -1,11 +1,10 @@
+import GithubUser from "./GitHubUser";
 
-
-import MyFormHook from "./MyFormHook";
 
 const App = () => {
   return (
     <>
-     <MyFormHook />
+      <GithubUser username="monica-lucaci" />
     </>
   );
 };
