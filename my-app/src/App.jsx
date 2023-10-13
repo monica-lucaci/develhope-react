@@ -37,9 +37,12 @@ const App = () => {
           <h1 style={{ color: "#8B0000" }}>
             This is my app! (Language: {language})
           </h1>
-        }
-      >
-        <LanguageContext.Provider value={language}>
+        }>
+
+        <LanguageContext.Provider value={language}> 
+        {/* If you remove the LanguageContext.Provider, the Clock component loses access to the selected language,
+         and it will always display the "Current Time" message in the default language ("en")
+         regardless of the user's language selection */}
           <Welcome name="Monica" />
 
           <Counter initialValue={0} incrementAmount={1} decrementAmount={1} />
