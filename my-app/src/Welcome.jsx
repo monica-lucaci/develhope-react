@@ -5,7 +5,7 @@ const Welcome = ({ name = "guest", age }) => {
    
     <div className="welcome">          
       <p>Welcome, {name}!</p>
-      {<Age age={31} />}
+      {/* {<Age age={31} />} */}
     </div>
   );
 };
