@@ -1,0 +1,15 @@
+.github-users {
+  display: flex;
+  justify-content: center;
+}
+
+.user-list {
+  flex: 1;
+  padding: 10px;
+}
+
+.user-details {
+  flex: 1;
+  padding: 10px;
+  text-align: left;
+}
