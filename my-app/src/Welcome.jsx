@@ -7,9 +7,9 @@ const Welcome = ({ name = "guest", age }) => {
     <div className="welcome">          
       <p>Welcome, {name}!</p>
       {/* {<Age age={31} />} */}
-      <Link to="/counter">Counter</Link>
+      {/* <Link to="/counter">Counter</Link>
       <hr />
-      <Link to="users/monica-lucaci">Visit Monica's GitHub Profile</Link>
+      <Link to="users/monica-lucaci">Visit Monica's GitHub Profile</Link> */}
 
     </div>
   );
