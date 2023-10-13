@@ -1,10 +1,10 @@
 import GithubUser from "./GitHubUser";
-
+import LocationComponent from "./LocationComponent";
 
 const App = () => {
   return (
     <>
-      <GithubUser username="monica-lucaci" />
+      <LocationComponent />
     </>
   );
 };
