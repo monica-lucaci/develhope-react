@@ -2,7 +2,7 @@ import { Route, Routes, useParams } from "react-router-dom";
 import ShowGithubUser from "./ShowGithubUser";
 import Container from "./Container";
 import Welcome from "./Welcome";
-import Counter from "./Counter"; // Import the Counter component
+import Counter from "./Counter"; 
 
 const App = () => {
   return (
