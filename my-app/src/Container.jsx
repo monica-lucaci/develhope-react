@@ -13,10 +13,10 @@ const Container = ({ title, children }) => {
       <div className="container-title">
         {title}
         <button onClick={handleButtonToggle}>
-          {collapse ? "Close" : "Open"}
+          {!collapse ? "Close" : "Open"}
         </button>
       </div>
-      {collapse && <div className="container-content">{children}</div>}
+      {!collapse && <div className="container-content">{children}</div>}
     </div>
   );
 };
