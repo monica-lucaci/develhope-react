@@ -1,10 +1,11 @@
 
-import HookCounter from "./HookCounter";
+
+import MyFormHook from "./MyFormHook";
 
 const App = () => {
   return (
     <>
-     <HookCounter />
+     <MyFormHook />
     </>
   );
 };
