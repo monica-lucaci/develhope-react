@@ -10,7 +10,7 @@ const App = () => {
     console.log("Login data:", formData);
   };
   return (
-    <Container>
+    <Container title={<h1 style={{ color: "#8B0000" }}>This is my app!</h1>}>
       <Welcome name="Monica" />
       <Counter initialValue={0} incrementAmount={1} decrementAmount={1} />
       <Login onLogin={handleLogin} />

@@ -1,9 +1,10 @@
-import './Container.css'; 
+import "./Container.css";
 
-const Container = ({ children }) => {
+const Container = ({ title, children }) => {
   return (
-    <div className="custom-container">
-      {children}
+    <div className="container">
+      <div className="container-title">{title}</div>
+      <div className="container-content">{children}</div>
     </div>
   );
 };
