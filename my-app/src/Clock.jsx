@@ -29,6 +29,8 @@ function Clock() {
         return "Ora Curentã: ";
       case "it":
         return "Ora Attuale: ";
+      case "de":
+        return "Aktuelle Zeit: "
       default:
         return "Current Time: ";
     }

@@ -28,6 +28,7 @@ const App = () => {
           <option value="es">Spanish</option>
           <option value="ro">Romanian</option>
           <option value="it">Italian</option>
+          <option value="de">German</option>
         </select>
       </div>
 
