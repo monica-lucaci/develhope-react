@@ -17,20 +17,11 @@ const App = () => {
   return (
     <div>
       <Container>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/counter">Counter</Link>
-            </li>
-            <li>
-              <Link to="/users">GitHub Users</Link>
-            </li>
-          </ul>
-        </nav>
-        <Routes> 
+        <div>
+          <Link to="/">Home</Link> | <Link to="/counter">Counter</Link> |{" "}
+          <Link to="/users">GitHub Users</Link>
+        </div>
+        <Routes>
           <Route path="/" element={<Welcome name="Monica" />} />
           <Route
             path="/counter"
@@ -43,6 +34,7 @@ const App = () => {
             }
           />
           <Route path="/users" element={<GithubUsers />}>
+            <Route index element={<div>Add a user and select it</div>} />
             <Route path=":username" element={<ShowGithubUser />} />
           </Route>
           <Route path="*" element={<NotFound />} />
