@@ -4,6 +4,13 @@ import Container from "./Container";
 import Welcome from "./Welcome";
 import Counter from "./Counter";
 
+const NotFound = () => (
+  <div>
+    <h2>404 - Not Found</h2>
+    <p>The requested page does not exist.</p>
+  </div>
+);
+
 const App = () => {
   return (
     <Container>
@@ -29,6 +36,8 @@ const App = () => {
           }
         />
         <Route path="/users/:username" element={<ShowGithubUser />} />
+        <Route path="/users/:username" element={<ShowGithubUser />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Container>
   );
