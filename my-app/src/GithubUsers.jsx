@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
-import GithubUser from "./GitHubUser";
-import "./GithubUsers.css";
+import { Link, Outlet } from "react-router-dom"; 
 
 const GithubUsers = () => {
   const [users, setUsers] = useState([]);
-  const [selectedUser, setSelectedUser] = useState(null);
 
   useEffect(() => {
     const fetchUserList = async () => {
@@ -29,18 +27,14 @@ const GithubUsers = () => {
       <div className="user-list">
         <ul>
           {users.map((user) => (
-            <li
-              key={user.login}
-              onClick={() => setSelectedUser(user.login)}
-              style={{ cursor: "pointer" }}
-            >
-              {user.login}
+            <li key={user.login}>
+              <Link to={`/users/${user.login}`}>{user.login}</Link>
             </li>
           ))}
         </ul>
       </div>
       <div className="user-details">
-        {selectedUser && <GithubUser username={selectedUser} />}
+        <Outlet />
       </div>
     </div>
   );
