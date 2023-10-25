@@ -9,6 +9,14 @@ const fetcher = async (url) => {
 };
 
 const useGithubUser = (username) => {
+  if (!username) {
+    return {
+      user: null,
+      loading: false,
+      error: "Username is required.",
+    };
+  }
+
   const { data: user, error } = useSWR(
     `https://api.github.com/users/${username}`,
     fetcher
@@ -17,7 +25,7 @@ const useGithubUser = (username) => {
   return {
     user,
     loading: !user && !error,
-    error,
+    error: error || (user ? null : "User does not exist."),
   };
 };
 

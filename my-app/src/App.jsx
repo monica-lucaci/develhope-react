@@ -5,7 +5,8 @@ import Counter from "./Counter";
 import GithubUsers from "./GithubUsers";
 import Container from "./Container";
 import ShowGithubUser from "./ShowGithubUser";
-import "./GithubUsers.css"
+import SearchGithubUser from "./SearchGithubUser";
+import GithubUser from "./GithubUser";
 
 const NotFound = () => (
   <div>
@@ -20,7 +21,8 @@ const App = () => {
       <Container>
         <div>
           <Link to="/">Home</Link> | <Link to="/counter">Counter</Link> |{" "}
-          <Link to="/users">GitHub Users</Link>
+          <Link to="/users">GitHub Users</Link> |{" "}
+          <Link to="/search">Search GitHub User</Link>
         </div>
         <Routes>
           <Route path="/" element={<Welcome name="Monica" />} />
@@ -38,6 +40,8 @@ const App = () => {
             <Route index element={<div>Add a user and select it</div>} />
             <Route path=":username" element={<ShowGithubUser />} />
           </Route>
+          <Route path="/search" element={<SearchGithubUser />} />
+          <Route path="/search/:username" element={<ShowGithubUser />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Container>
