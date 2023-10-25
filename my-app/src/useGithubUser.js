@@ -1,12 +1,6 @@
 import useSWR from "swr";
 
-const fetcher = async (url) => {
-  const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error("Failed to fetch data");
-  }
-  return response.json();
-};
+
 
 const useGithubUser = (username) => {
   if (!username) {
@@ -21,7 +15,7 @@ const useGithubUser = (username) => {
     data: user,
     error,
     mutate,
-  } = useSWR(`https://api.github.com/users/${username}`, fetcher);
+  } = useSWR(`https://api.github.com/users/${username}`);
 
   function handleRefresh() {
     mutate();
