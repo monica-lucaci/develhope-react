@@ -5,6 +5,7 @@ import Counter from "./Counter";
 import GithubUsers from "./GithubUsers";
 import Container from "./Container";
 import ShowGithubUser from "./ShowGithubUser";
+import "./GithubUsers.css"
 
 const NotFound = () => (
   <div>
