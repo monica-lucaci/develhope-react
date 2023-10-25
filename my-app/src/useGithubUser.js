@@ -23,7 +23,7 @@ const useGithubUser = (username) => {
     mutate,
   } = useSWR(`https://api.github.com/users/${username}`, fetcher);
 
-  function handleRefresh(){
+  function handleRefresh() {
     mutate();
   }
 
