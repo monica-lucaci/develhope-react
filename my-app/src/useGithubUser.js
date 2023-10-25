@@ -17,15 +17,21 @@ const useGithubUser = (username) => {
     };
   }
 
-  const { data: user, error } = useSWR(
-    `https://api.github.com/users/${username}`,
-    fetcher
-  );
+  const {
+    data: user,
+    error,
+    mutate,
+  } = useSWR(`https://api.github.com/users/${username}`, fetcher);
+
+  function handleRefresh(){
+    mutate();
+  }
 
   return {
     user,
     loading: !user && !error,
     error: error || (user ? null : "User does not exist."),
+    onRefresh: handleRefresh,
   };
 };
 
